@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p> The Result for mark1 56 :<span id="mark1"></span> </p>
+    <p> The Result for mark2 90 :<span id="mark2"></span> </p>
+    <p> The Result for mark3 70 :<span id="mark3"></span> </p>
+    <p> The Result for mark4 10 :<span id="mark4"></span> </p>
+    <script type="text/javascript">
+      function assignGrade(Marks) {
+
+        if (Marks>75) {
+          return "A";
+        }else if (Marks>65) {
+          return "B";
+        }else if (Marks>45) {
+          return "C";
+        }else {
+          return "F";
+        }
+      }
+      document.getElementById("mark1").innerHTML=assignGrade(56);
+      document.getElementById("mark2").innerHTML=assignGrade(70);
+      document.getElementById("mark3").innerHTML=assignGrade(90);
+      document.getElementById("mark4").innerHTML=assignGrade(10);
+    </script>
+  </body>
+</html>

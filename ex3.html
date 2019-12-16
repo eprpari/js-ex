@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <button type="button"onclick="button()">Just click here to see the magic :)</button>
+    <script type="text/javascript">
+      function colorCode(num) {
+        if (num<0 || num>30) {
+          return "It is not a correct colour option.";
+        } else if (num<10) {
+          return "blue";
+        } else if (num<20) {
+          return "red";
+        }else {
+          return "green";
+        }
+      }
+      function button() {
+        document.getElementById("one").innerHTML="The Color code for 0 is :"+colorCode(0);
+        document.getElementById("two").innerHTML="The Color code for 30 is :"+colorCode(30);
+        document.getElementById("three").innerHTML="The Color code for 221 is :"+colorCode(221);
+        document.getElementById("four").innerHTML="The Color code for 15 is :"+colorCode(15);
+      }
+    </script>
+  </body>
+</html>
